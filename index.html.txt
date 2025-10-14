@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrelage Dupont - Artisan Carreleur à Lyon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Carrelage Dupont</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Artisan carreleur à Lyon</h2>
+    <p>Pose, rénovation et création sur mesure depuis 15 ans.</p>
+    <a href="#contact" class="btn">Demander un devis gratuit</a>
+  </section>
+
+  <section id="services">
+    <h2>Nos services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Pose de carrelage</h3>
+        <p>Pose de carrelage mural et au sol pour cuisines, salles de bain et terrasses.</p>
+      </div>
+      <div class="card">
+        <h3>Rénovation</h3>
+        <p>Rafraîchissez vos espaces avec des matériaux modernes et résistants.</p>
+      </div>
+      <div class="card">
+        <h3>Créations sur mesure</h3>
+        <p>Mosaïques, douches italiennes, motifs personnalisés selon vos envies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="realisations">
+    <h2>Nos réalisations</h2>
+    <div class="gallery">
+      <img src="images/salle-de-bain.jpg" alt="Salle de bain carrelée">
+      <img src="images/cuisine.jpg" alt="Cuisine carrelée">
+      <img src="images/terrasse.jpg" alt="Terrasse carrelée">
+    </div>
+  </section>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>Fort de 15 ans d’expérience, <strong>Carrelage Dupont</strong> met son savoir-faire artisanal au service des particuliers et professionnels.  
+    Nous travaillons avec des matériaux de qualité pour garantir un résultat durable et esthétique.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>📍 Lyon et alentours<br>
+    📞 06 12 34 56 78<br>
+    ✉️ contact@carrelage-dupont.fr</p>
+    <form>
+      <input type="text" placeholder="Votre nom" required>
+      <input type="email" placeholder="Votre email" required>
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Carrelage Dupont - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
