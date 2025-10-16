@@ -3,74 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrelage COT - Artisan Carreleur à Albi</title>
+  <title>Carrelage COT - Artisan Carreleur à Cambon</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Carrelage COT</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#realisations">Réalisations</a>
-      <a href="#apropos">À propos</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Carrelage <span>COT</span></h1>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <section id="hero">
-    <h2>Artisan carreleur basé à Cambon</h2>
-    <p>Pose, rénovation et création sur mesure depuis 15 ans.</p>
-    <a href="#contact" class="btn">Demander un devis gratuit</a>
+    <div class="hero-content">
+      <h2>Artisan carreleur à Cambon</h2>
+      <p>Pose, rénovation et créations sur mesure depuis plus de 15 ans.</p>
+      <a href="#contact" class="btn">Demander un devis gratuit</a>
+    </div>
   </section>
 
-  <section id="services">
+  <section id="services" class="container">
     <h2>Nos services</h2>
     <div class="grid">
       <div class="card">
         <h3>Pose de carrelage</h3>
-        <p>Pose de carrelage mural et au sol pour cuisines, salles de bain et terrasses.</p>
+        <p>Sol et mur, pour toutes les pièces de la maison : cuisine, salle de bain, terrasse...</p>
       </div>
       <div class="card">
         <h3>Rénovation</h3>
-        <p>Rafraîchissez vos espaces avec des matériaux modernes et résistants.</p>
+        <p>Redonnez vie à vos intérieurs grâce à un travail soigné et durable.</p>
       </div>
       <div class="card">
         <h3>Créations sur mesure</h3>
-        <p>Mosaïques, douches italiennes, motifs personnalisés selon vos envies.</p>
+        <p>Mosaïques, douches italiennes, motifs personnalisés – votre imagination devient réalité.</p>
       </div>
     </div>
   </section>
 
   <section id="realisations">
-    <h2>Nos réalisations</h2>
-    <div class="gallery">
-      <img src="images/salle-de-bain.jpg" alt="Salle de bain carrelée">
-      <img src="images/cuisine.jpg" alt="Cuisine carrelée">
-      <img src="images/terrasse.jpg" alt="Terrasse carrelée">
+    <div class="container">
+      <h2>Nos réalisations</h2>
+      <div class="gallery">
+        <img src="images/salle-de-bain.jpg" alt="Salle de bain carrelée">
+        <img src="images/cuisine.jpg" alt="Cuisine carrelée">
+        <img src="images/terrasse.jpg" alt="Terrasse carrelée">
+      </div>
     </div>
   </section>
 
-  <section id="apropos">
+  <section id="apropos" class="container">
     <h2>À propos</h2>
-    <p>Fort de 15 ans d’expérience, <strong>Carrelage Dupont</strong> met son savoir-faire artisanal au service des particuliers et professionnels.  
-    Nous travaillons avec des matériaux de qualité pour garantir un résultat durable et esthétique.</p>
+    <p>
+      Fort de 15 ans d’expérience, <strong>Carrelage COT</strong> met son savoir-faire artisanal au service des particuliers et professionnels.  
+      Nous travaillons uniquement avec des matériaux de qualité pour un résultat durable, précis et esthétique.
+    </p>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="container">
     <h2>Contactez-nous</h2>
-    <p>📍 Cambon et alentours<br>
-    📞 06 12 34 56 78<br>
-    ✉️ contact@carrelage-dupont.fr</p>
+    <div class="contact-info">
+      <p>📍 Cambon et alentours</p>
+      <p>📞 06 27 02 50 94</p>
+      <p>✉️ j-cot@wanadoo.fr</p>
+    </div>
     <form>
       <input type="text" placeholder="Votre nom" required>
       <input type="email" placeholder="Votre email" required>
       <textarea placeholder="Votre message" required></textarea>
-      <button type="submit">Envoyer</button>
+      <button type="submit" class="btn">Envoyer</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 Carrelage Dupont - Tous droits réservés</p>
+    <p>© 2025 Carrelage COT — Tous droits réservés</p>
   </footer>
 </body>
 </html>
