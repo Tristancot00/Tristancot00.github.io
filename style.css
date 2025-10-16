@@ -18,10 +18,10 @@ body {
 
 /* --- Header --- */
 header {
-  background-color: #2c2c2c;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   padding: 15px 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); */
 }
 header .container {
   display: flex;
@@ -29,7 +29,7 @@ header .container {
   align-items: center;
 }
 header h1 {
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1.8rem;
 }
 header h1 span {
@@ -47,11 +47,19 @@ header nav a:hover {
 
 /* --- Hero Section --- */
 #hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)),
               url('images/hero.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 120px 20px;
+}
+#hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+#hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
 }
 #hero h2 {
   font-size: 2.2rem;
@@ -132,24 +140,18 @@ header nav a:hover {
 
 /* --- Contact --- */
 #contact {
-  padding: 70px 0;
+  padding: 140px 0;
   text-align: center;
+  font-size: 1.5rem; /* taille plus lisible */
 }
 #contact .contact-info {
   margin-bottom: 25px;
 }
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-input, textarea {
+#contact textarea {
+  font-size: 1.5rem; /* taille plus lisible */
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 10px;
-  font-family: inherit;
+  border-radius: 30px;
 }
 textarea {
   min-height: 120px;
