@@ -1,95 +1,180 @@
-body {
-  font-family: Arial, sans-serif;
+/* --- Reset & Base --- */
+* {
   margin: 0;
-  background: #a09898;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfbf8;
   color: #333;
+  line-height: 1.6;
 }
-
-header {
-  background: #2b6cb0;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#hero {
-  background: url('images/carrelage-bg.jpg') center/cover;
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.btn {
-  display: inline-block;
-  background: #ffb703;
-  color: #333;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-top: 10px;
-  text-decoration: none;
-}
-
-section {
-  padding: 50px 20px;
-  max-width: 1000px;
+.container {
+  width: 90%;
+  max-width: 1100px;
   margin: auto;
 }
 
+/* --- Header --- */
+header {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+header h1 span {
+  color: #d37a47;
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+header nav a:hover {
+  color: #d37a47;
+}
+
+/* --- Hero Section --- */
+#hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('images/hero.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+#hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+#hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+.btn {
+  display: inline-block;
+  background-color: #d37a47;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #b8612b;
+}
+
+/* --- Services --- */
+#services {
+  text-align: center;
+  padding: 70px 0;
+}
+#services h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
 .grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
 }
-
 .card {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  flex: 1;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
 }
 
+/* --- Réalisations --- */
+#realisations {
+  background-color: #f4f2ef;
+  padding: 70px 0;
+  text-align: center;
+}
 .gallery {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
 }
-
 .gallery img {
-  width: 32%;
-  border-radius: 8px;
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
+/* --- À propos --- */
+#apropos {
+  padding: 70px 0;
+  text-align: center;
+}
+#apropos p {
+  max-width: 800px;
   margin: 20px auto;
 }
 
-input, textarea, button {
-  padding: 10px;
-  font-size: 1rem;
-}
-
-button {
-  background: #2b6cb0;
-  color: white;
-  border: none;
-  border-radius: 5px;
-}
-
-footer {
-  background: #222;
-  color: #ccc;
+/* --- Contact --- */
+#contact {
+  padding: 70px 0;
   text-align: center;
-  padding: 10px;
+}
+#contact .contact-info {
+  margin-bottom: 25px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: inherit;
+}
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+button.btn {
+  border: none;
+  cursor: pointer;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #2c2c2c;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  header .container {
+    flex-direction: column;
+  }
+  header nav a {
+    margin: 10px;
+  }
 }
