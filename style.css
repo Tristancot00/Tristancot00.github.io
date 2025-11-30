@@ -21,7 +21,6 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   padding: 15px 0;
-  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); */
 }
 header .container {
   display: flex;
@@ -61,14 +60,6 @@ header nav a:hover {
   font-size: 1.1rem;
   margin-bottom: 25px;
 }
-#hero h2 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-}
-#hero p {
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-}
 .btn {
   display: inline-block;
   background-color: #d37a47;
@@ -91,20 +82,56 @@ header nav a:hover {
   font-size: 2rem;
   margin-bottom: 40px;
 }
+
+/* ✅ Nouveau style modernisé intégré */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #1a1a1a;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
 }
+
 .card {
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 25px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.25s ease;
+  border: 1px solid rgba(0,0,0,0.06);
 }
+
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.8rem;
+  color: #2c2c2c;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222222;
+}
+
+.card p {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #555555;
+  line-height: 1.4;
 }
 
 /* --- Réalisations --- */
@@ -142,13 +169,13 @@ header nav a:hover {
 #contact {
   padding: 140px 0;
   text-align: center;
-  font-size: 1.5rem; /* taille plus lisible */
+  font-size: 1.5rem;
 }
 #contact .contact-info {
   margin-bottom: 25px;
 }
 #contact textarea {
-  font-size: 1.5rem; /* taille plus lisible */
+  font-size: 1.5rem;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 30px;
